@@ -33,7 +33,11 @@ public class LayoutTest {
         panel.setBorder(BorderFactory.createTitledBorder("FlowLayout"));
 
         panel.add(new JLabel("Layout de fluxo"));
-        panel.add(new JButton("Botão 1"));
+        JButton button1 = new JButton("fechar 1");
+        button1.addActionListener(e -> {
+            System.exit(0);
+        });
+        panel.add(button1);
         panel.add(new JButton("Botão 2"));
         panel.add(new JButton("Botão 3"));
 
